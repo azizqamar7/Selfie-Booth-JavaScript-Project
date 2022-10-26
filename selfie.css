@@ -238,6 +238,12 @@ video {
 }
 
 @media screen and (max-width:600px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     .selfie-container {
         max-width: 280px;
         height: 470px;
