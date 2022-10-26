@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./selfie.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <!-- selfie container start -->
+        <div class="selfie-container" id="selfie-container">
+          <div class="logos">
+            <img src="./assets/mc-logo.png" alt="" class="mc-logo" />
+            <img src="./assets/nmd.png" alt="" class="nmd-logo" />
+          </div>
+
+          <p class="c_text_large">I'm participating in</p>
+          <!-- <h1 class="c_h1">Global Mentorship Festival 2022</h1> -->
+          <div class="title"><img src="./assets/title.svg" alt="" /></div>
+          <p class="c_text_small">
+            on 27 Oct | A 24 Hr Global Mentoring Festival
+          </p>
+
+          <div class="web-cam">
+            <video autoplay></video>
+            <!-- <div class="img-container" hidden>
+              <img src="" alt="" />
+            </div> -->
+          </div>
+
+          <p class="c_text_large bold">Join me at</p>
+          <a
+            href="https://www.mentorcloud.com/gmf"
+            class="c_text_large link"
+            target="_blank"
+            >mentorcloud.com/gmf</a
+          >
+
+          <div class="time-sticker">
+            <img src="./assets/time-sticker.svg" alt="" />
+          </div>
+
+          <div class="world-map">
+            <img src="./assets/globe.svg" alt="" />
+          </div>
+
+          <div class="nmd-sticker">
+            <img src="./assets/nmd-sticker.png" alt="" />
+          </div>
+
+          <div class="gmf-2022">
+            <img src="./assets/gmf-2022.png" alt="" />
+          </div>
+        </div>
+
+        <!-- selfie container ends -->
+
+        <button id="capture-btn">
+          <img src="./assets/capture.svg" alt="" />
+          <p>Say Cloud</p>
+        </button>
+
+        <div class="share-and-reset-block">
+          <img src="./assets/reset-btn.svg" alt="" class="reset" id="reset" />
+
+          <button class="share" id="share">
+            <img src="./assets/linkedin.svg" alt="" />
+            <p>Share & let the world know</p>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <script src="./selfie.js"></script>
+    <script src="./html2canvas.js"></script>
+  </body>
+</html>

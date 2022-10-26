@@ -1,0 +1,369 @@
+body {
+    margin: 0;
+    font-family: 'Manrope', sans-serif;
+
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    background: #FCF2E1;
+}
+
+h1, p {
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.selfie-container {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    width: 570px;
+    height: 843px;
+    background: #FEFBF5;
+    border: 5px solid #E6DBC5;
+    border-radius: 12px;
+    padding: 32px;
+}
+
+.logos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    mix-blend-mode: multiply;
+}
+
+.mc-logo {
+    width: 229px;
+    height: auto;
+}
+
+.nmd-logo {
+    width: 229px;
+    height: auto;
+}
+
+.c_text_large {
+    font-weight: 500;
+    font-size: 24px;
+    color: #06222E;
+    margin-top: 65px;
+    margin-bottom: 22px;
+}
+
+.c_text_large.bold {
+    font-weight: 800;
+    font-size: 24px;
+    color: #06222E;
+    margin-top: 80px;
+    margin-bottom: 0px;
+}
+
+.c_text_large.link {
+    font-weight: 500;
+    font-size: 24px;
+    color: black;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+/* .c_h1 {
+    font-weight: 800;
+    font-size: 32px;
+    letter-spacing: -0.05em;
+    background: linear-gradient(269.8deg, #E24B4C 0.49%, #EBB12D 108.5%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+} */
+
+.c_text_small {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    color: #06222E;
+    opacity: 0.75;
+    margin-top: 7px;
+    margin-bottom: 30px;
+}
+
+.web-cam {
+    width: 429px;
+    height: 321.75px;
+    position: relative;
+    z-index: 2;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 5px solid #e24b4b4b;
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    background-color: #06222E;
+}
+
+/* Absolute sticker styles */
+
+.time-sticker {
+    position: absolute;
+    z-index: 3;
+    top: auto;
+    left: auto;
+    right: 60px;
+    bottom: 380px;
+}
+
+.world-map {
+    position: absolute;
+    z-index: 1;
+    top: auto;
+    left: auto;
+    right: 8px;
+    bottom: 150px;
+}
+
+.nmd-sticker {
+    position: absolute;
+    z-index: 3;
+    top: auto;
+    left: auto;
+    right: 80px;
+    bottom: 200px;
+}
+
+.nmd-sticker > img {
+    width: 180px;
+    height: auto;
+}
+
+.gmf-2022 {
+    position: absolute;
+    z-index: 3;
+    top: auto;
+    left: 45px;
+    right: auto;
+    bottom: 200px;
+}
+
+.gmf-2022 > img {
+    width: 220px;
+    height: auto;
+}
+
+/* .img-container {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    bottom: 0%;
+    background-color: #E24B4C;
+} */
+
+/* .img-container > img {
+    max-width: 100%;
+} */
+
+/* .capture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    padding: 16px;
+    background: #E24B4C;
+    border-radius: 4px;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+} */
+
+#capture-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    padding: 16px;
+    background: #E24B4C;
+    border-radius: 4px;
+    color: white;
+    font-size: 18px;
+    border-style: none;
+    cursor: pointer;
+    position: absolute;
+    top: auto;
+    left: auto;
+    right: auto;
+    bottom: 40px;
+}
+
+.share-and-reset-block {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+    position: absolute;
+    top: auto;
+    left: auto;
+    right: auto;
+    bottom: 40px;
+}
+
+.reset {
+    cursor: pointer;
+}
+
+.share {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    padding: 16px;
+    background: #485DD8;
+    border-radius: 4px;
+    color: white;
+    font-size: 18px;
+    border-style: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width:365px) {
+    .selfie-container {
+        max-width: 280px;
+        height: 470px;
+        padding: 16px;
+    }
+
+    .mc-logo {
+        width: 150px;
+    }
+
+    .nmd-logo {
+        width: 90px;
+    }
+
+    .web-cam {
+        width: 240px;
+        height: 180px;
+        position: relative;
+        z-index: 2;
+        border-radius: 12px;
+        overflow: hidden;
+        border: 5px solid #e24b4b4b;
+    }
+
+    .c_text_large {
+        font-weight: 500;
+        font-size: 14px;
+        margin-top: 30px;
+        margin-bottom: 8px;
+    }
+
+    .title > img {
+        width: 256px;
+        height: auto;
+    }
+
+    .c_text_small {
+        font-size: 12px;
+        margin-top: 3px;
+        margin-bottom: 18px;
+    }
+
+    .c_text_large.bold {
+        font-size: 14px;
+        margin-top: 30px;
+    }
+
+    .c_text_large.link {
+        font-size: 14px;
+    }
+
+    /* Stickers responsiveness */
+    .time-sticker > img {
+        width: 72px;
+        height: auto;
+    }
+
+    .time-sticker {
+        right: 10px;
+        bottom: 220px;
+    }
+
+    .world-map > img {
+        width: 140px;
+        height: auto;
+    }
+
+    .world-map {
+        right: 5px;
+        bottom: 80px;
+    }
+
+    .nmd-sticker {
+        right: 30px;
+        bottom: 123px;
+    }    
+
+    .nmd-sticker > img {
+        width: 90px;
+    }
+
+    .gmf-2022 {
+        left: 0px;
+        bottom: 110px;
+    }
+
+    .gmf-2022 > img {
+        width: 120px;
+    }
+
+    /* buttons */
+
+    #capture-btn {
+        padding: 9px;
+        column-gap: 5px;
+        font-size: 12px;
+        bottom: 20px;
+    }
+
+    #capture-btn > img {
+        width: 12px;
+    }
+
+    .share-and-reset-block {
+        column-gap: 10px;
+        position: absolute;
+        top: auto;
+        left: auto;
+        right: auto;
+        bottom: 20px;
+    }
+
+    .reset {
+        width: 30px;
+    }
+
+    .share {
+        padding: 9px;
+        column-gap: 8px;
+        font-size: 12px;
+    }
+
+    .share > img {
+        width: 12px;
+        height: auto;
+    }
+    
+}
