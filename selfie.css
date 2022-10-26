@@ -263,6 +263,10 @@ video {
         border: 5px solid #e24b4b4b;
     }
 
+    video {
+        object-fit: cover;
+    }
+
     .c_text_large {
         font-weight: 500;
         font-size: 14px;
