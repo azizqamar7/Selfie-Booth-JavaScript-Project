@@ -50,6 +50,11 @@ function resetBlock () {
 }
 
 // on share
+function shareOnLinkedIn () {
+    window.open('http://www.linkedin.com/shareArticle?mini=true&url=' + encodeURIComponent(document.URL) + '&title=' + encodeURIComponent(document.title), '', 'width=600,height=800'); return false
+}
 
+
+shareBtn.addEventListener('click', shareOnLinkedIn)
 resetBtn.addEventListener('click', resetBlock)
 
