@@ -238,7 +238,7 @@ video {
     cursor: pointer;
 }
 
-@media screen and (max-width:365px) {
+@media screen and (max-width:600px) {
     .selfie-container {
         max-width: 280px;
         height: 470px;
